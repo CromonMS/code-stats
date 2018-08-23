@@ -14,7 +14,7 @@ PATHS=*
 
 # Pattern of filenames to exclude.
 EXCLUDE='^$'
-DEFAULT_EXCLUDE='node_modules|jquery|underscore|mustache.js|require|order.js|text.js'
+DEFAULT_EXCLUDE='dist|public|node_modules|jquery|underscore|mustache.js|require|order.js|text.js'
 
 # Filetypes to count.
 TYPES=(
@@ -48,11 +48,12 @@ TYPES=(
   
   ## Web and docs
 
-  html htm xhtml xml  # Markup
-  css                 # Styles
-  mustache haml jade  # Templates
-  less sass styl      # Preprocessed CSS
-  md markdown         # Docs
+  html htm xhtml xml    # Markup
+  css                   # Styles
+  mustache haml jade    # Templates
+  less sass styl scss   # Preprocessed CSS
+  md markdown           # Docs
+  vue                   # Vue
 
   ## Config
 
